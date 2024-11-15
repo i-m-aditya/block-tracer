@@ -1,0 +1,38 @@
+[package]
+name = "block-tracer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hex-literal = "0.4.1"
+reqwest = { version = "0.11", features = ["json"] }
+serde_json = "1.0"
+serde = { version = "1.0", default-features = false }
+tokio = { version = "1.0", features = ["full"] }
+
+#reth 
+reth-rpc-types = { git = "https://github.com/paradigmxyz/reth.git"}
+reth-rpc-eth-types = { git = "https://github.com/paradigmxyz/reth.git"}
+reth-db = { git = "https://github.com/paradigmxyz/reth.git"}
+reth-db-api = { git = "https://github.com/paradigmxyz/reth.git"}
+reth-chainspec = { git = "https://github.com/paradigmxyz/reth.git"}
+reth-primitives = { git = "https://github.com/paradigmxyz/reth.git"}
+reth-provider = { git = "https://github.com/paradigmxyz/reth.git"}
+
+
+#rpc
+jsonrpsee = "0.23"
+jsonrpsee-core = "0.23"
+jsonrpsee-types = "0.23"
+
+
+#alloy
+alloy-primitives = "0.7.2"
+dotenv = "0.15.0"
+futures = "0.3.30"
+clap = "4.5.20"
+anyhow = "1.0.93"
+num_cpus = "1.16.0"
+tracing-subscriber = "0.3.18"
+tracing = "0.1.40"
+rayon = "1.10.0"
